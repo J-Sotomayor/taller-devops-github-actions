@@ -10,4 +10,24 @@ public class Cliente {
         this.cedula = cedula;
         this.correo = correo;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getCedula() {
+        return cedula;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public boolean tieneCorreoValido() {
+        return correo != null && correo.contains("@");
+    }
+
+    public String mostrarInformacion() {
+        return "Cliente: " + nombre + " - Cedula: " + cedula;
+    }
 }
