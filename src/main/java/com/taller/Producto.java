@@ -8,4 +8,16 @@ public class Producto {
         this.nombre = nombre;
         this.precio = precio;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public double calcularPrecioConIva() {
+        return precio * 1.15;
+    }
 }
